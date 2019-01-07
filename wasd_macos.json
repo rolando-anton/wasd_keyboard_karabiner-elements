@@ -1,0 +1,124 @@
+{
+  "title": "WASD Keyboard Compatible Mode (rev 1)",
+  "rules": [
+     {
+      "description": "WASD Multimedia Keys (88-Key Tenkeyless)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_down",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_decrement"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_up",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_increment"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f15",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "mute"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "fastforward"
+            }
+          ]
+        },
+        {
+            "type": "basic",
+            "from": {
+              "key_code": "insert",
+              "modifiers": {
+                "mandatory": [
+                  "fn"
+                ],
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "consumer_key_code": "play_or_pause"
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "delete_forward",
+              "modifiers": {
+                "mandatory": [
+                  "fn"
+                ],
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "consumer_key_code": "rewind"
+              }
+            ]
+          }
+      ]
+    }
+   ]
+}
